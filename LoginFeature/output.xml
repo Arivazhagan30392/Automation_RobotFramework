@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220510 23:17:01.029" rpa="false" schemaversion="3">
+<suite id="s1" name="UDALogin" source="D:\python\RobotFrameWorkPython\RobotFrameWorkPython\tests\LoginFeature\UDALogin.robot">
+<test id="s1-t1" name="Login Test Login" line="27">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220510 23:17:01.174" level="INFO">Opening browser 'Chrome' to base url 'https://stageticketingappstrg.z23.web.core.windows.net/'.</msg>
+<msg timestamp="20220510 23:17:01.174" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220510 23:17:01.174" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</msg>
+<status status="FAIL" starttime="20220510 23:17:01.174" endtime="20220510 23:17:01.174"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${input_phoneNumber}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220510 23:17:01.174" endtime="20220510 23:17:01.174"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${input_phoneNumber}</arg>
+<arg>${phoneNumber}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220510 23:17:01.174" endtime="20220510 23:17:01.174"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${countine_button}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220510 23:17:01.174" endtime="20220510 23:17:01.174"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${countine_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220510 23:17:01.174" endtime="20220510 23:17:01.174"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${verification_Code}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220510 23:17:01.183" endtime="20220510 23:17:01.183"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${verification_Code}</arg>
+<arg>${Otp_code}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220510 23:17:01.183" endtime="20220510 23:17:01.183"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${verification_Path}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220510 23:17:01.183" endtime="20220510 23:17:01.183"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220510 23:17:01.183" endtime="20220510 23:17:01.183"/>
+</kw>
+<tag>LoginFeature</tag>
+<status status="FAIL" starttime="20220510 23:17:01.167" endtime="20220510 23:17:01.183">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</status>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="FAIL" starttime="20220510 23:17:01.029" endtime="20220510 23:17:01.183"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">LoginFeature</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="UDALogin">UDALogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
